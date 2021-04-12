@@ -21,10 +21,11 @@ describe("exercises", function () {
 
       // Act
       const answer = grouped_anagrams(list);
+      // order shouldn't matter
       const expected_answer = [
-        ["ate", "eat", "tea"],
+        ["bat"],
         ["nat", "tan"],
-        ["bat"]
+        ["ate", "eat", "tea"]
       ];
 
       // Assert
