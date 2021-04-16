@@ -75,7 +75,7 @@ describe("exercises", function () {
     });
   });
 
-  describe("top_k_frequent_elements", function () {
+  describe.skip("top_k_frequent_elements", function () {
     it("works with example 1", function () {
       // Arrange
       const list = [1, 1, 1, 2, 2, 3];
@@ -133,11 +133,11 @@ describe("exercises", function () {
       const answer = top_k_frequent_elements(list, k);
 
       // Assert
-      expect(answer.sort()).toEqual([1]);
+      expect(answer.sort()).toEquanpml([1]);
     });
   });
 
-  describe("valid sudoku", function () {
+  describe.skip("valid sudoku", function () {
     it("is not valid if a row has duplicate values", function () {
       // Arrange
       const table = [
