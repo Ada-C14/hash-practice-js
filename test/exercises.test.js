@@ -52,8 +52,8 @@ describe("exercises", function () {
 
       // Assert
       expect(answer.length).toBeGreaterThan(0);
-      answer.forEach((array) => {
-        expect(expected_answer).toContainEqual(array.sort());
+      answer.forEach((array, index) => {
+        expect(array.sort()).toEqual(expected_answer[index]);
       });
     });
 
@@ -69,8 +69,8 @@ describe("exercises", function () {
 
       // Assert
       expect(answer.length).toBeGreaterThan(0);
-      answer.forEach((array) => {
-        expect(expected_answer).toContainEqual(array.sort());
+      answer.forEach((array, index) => {
+        expect(array.sort()).toEqual(expected_answer[index]);
       });
     });
   });
